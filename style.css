@@ -26,10 +26,14 @@ body{
 }
 .micbox{
     width: 50%;
-    display:flex;
+    display:grid;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+#action{
+    margin-top:20px;
+    color:white;    
 }
 .mic{
     background-color: rgb(26, 26, 139);
@@ -39,7 +43,7 @@ body{
     border-radius: 50%;
 }
 .mic:focus{
-    background-color:blue;
+    background-color:rgb(119, 119, 209);
 }
 .textbox{
     width: 50% ;
@@ -61,7 +65,7 @@ body{
         margin-top: 20px;
     }
     .micbox{
-        margin-top: 50px;
+        margin-top: 20vh;
         WIDTH:100%;
     }
     #textContainer{
