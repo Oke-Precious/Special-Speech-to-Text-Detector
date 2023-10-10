@@ -15,7 +15,9 @@ body{
 }
 .special{
     position:fixed;
-    top: 20px;
+    top: 0;
+    padding: 20px;
+    background-color: rgb(12, 12, 46);
     width: 100%;
     text-align:center;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -56,8 +58,13 @@ body{
     }
     .textbox{
         WIDTH:100%;
+        margin-top: 20px;
     }
     .micbox{
+        margin-top: 50px;
         WIDTH:100%;
+    }
+    #textContainer{
+        width: 80%;
     }
 }
