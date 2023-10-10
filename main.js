@@ -1,7 +1,5 @@
 
 let detectSpeech=()=>{
-    mic.style.width = "320px";
-    mic.style.height = "320px";
     var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
     var recognition = new SpeechRecognition();
     textbox.style.display = "flex";
@@ -16,11 +14,10 @@ let detectSpeech=()=>{
     }
     recognition.onresult = function(event){
         mic.innerHTML = `<img src="kindpng_29297.png" alt="" class="mimg">`
-        mic.style.width = "300px";
-        mic.style.height = "300px";
         var transcript = event.results[0][0].transcript;
         var confidence = event.results[0][0].confidence;
-        textContainer.innerHTML = transcript;                           
+        textContainer.innerHTML = transcript;     
+                      
     }
     recognition.start()
 

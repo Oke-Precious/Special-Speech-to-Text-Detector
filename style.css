@@ -1,5 +1,6 @@
 *{
     padding: 0;
+    outline:red solid 1px;
     margin:0;
     box-sizing: border-box;
     overflow: hidden;
@@ -52,14 +53,21 @@ body{
     align-items: CENTER;
     justify-content: center;
 }
-#textContainer{
+.notepad{
     height: 80vh;
-    padding:20px;
+    align-items: center;
+    justify-content: center;
+    padding:40px;
     font-size: 14pt;
     width: 60%;
     color:black;
     font-family:arial;
-    background-color: rgba(219, 218, 218, 0.829);
+    background-image:url(notepad.png);
+    background-position:center;
+    background-size:cover;
+}
+#textContainer{
+    width:80%;
 }
 @media screen AND (MAX-WIDTH: 1024PX) {
     BODY{
@@ -73,7 +81,23 @@ body{
         margin-top: 20vh;
         WIDTH:100%;
     }
+    .mic{
+        background-color: rgb(26, 26, 139);
+        padding: 20px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    .notepad{
+        width: 90%;
+    }
     #textContainer{
-        width: 80%;
+        
+    }
+    .mimg{
+        width:80px;
+    }
+    img{
+        width:100%;
     }
 }
