@@ -24,6 +24,9 @@ body{
     color:white;
 
 }
+.mimg{
+    width:100px;
+}
 .micbox{
     width: 50%;
     display:grid;
@@ -42,9 +45,7 @@ body{
     height: 300px;
     border-radius: 50%;
 }
-.mic:focus{
-    background-color:rgb(119, 119, 209);
-}
+
 .textbox{
     width: 50% ;
     display: none;

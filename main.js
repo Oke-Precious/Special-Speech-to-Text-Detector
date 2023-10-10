@@ -1,11 +1,13 @@
 
 let detectSpeech=()=>{
+    mic.style.width = "320px";
+    mic.style.height = "320px";
     var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
     var recognition = new SpeechRecognition();
-    textContainer.innerHTML="Wetin ypu dey talk";
     textbox.style.display = "flex";
 
     recognition.onstart = function(){
+        mic.innerHTML = `<img src="broadcast-8440_256.gif" alt="">`
         action.innerHTML = "listening, please speak...";
     }
     recognition.onspeeched = function(){
@@ -13,13 +15,13 @@ let detectSpeech=()=>{
         recognition.stop();
     }
     recognition.onresult = function(event){
+        mic.innerHTML = `<img src="kindpng_29297.png" alt="" class="mimg">`
+        mic.style.width = "300px";
+        mic.style.height = "300px";
         var transcript = event.results[0][0].transcript;
         var confidence = event.results[0][0].confidence;
-        textContainer.innerHTML = `<b>Text:</b> ${transcript}
-                                    <br/> 
-                                    <b>Confidence:</b>  ${confidence*100} % 
-                                     `
-        textContainer.classList.remove("hide");                            
+        textContainer.innerHTML = transcript;     
+        alert("halleluyah")                      
     }
     recognition.start()
 
