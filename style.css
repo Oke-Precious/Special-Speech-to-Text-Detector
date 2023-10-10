@@ -11,20 +11,53 @@ body{
     height:100vh;
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 .special{
     position:fixed;
     top: 20px;
+    width: 100%;
+    text-align:center;
     font-family:Georgia, 'Times New Roman', Times, serif;
     color:white;
 
 }
+.micbox{
+    width: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 .mic{
     background-color: rgb(26, 26, 139);
     padding: 20px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
 }
 .mic:focus{
     background-color:blue;
+}
+.textbox{
+    width: 50% ;
+    display: none;
+    align-items: CENTER;
+    justify-content: center;
+}
+#textContainer{
+    height: 80vh;
+    width: 60%;
+    background-color: rgba(219, 218, 218, 0.829);
+}
+@media screen AND (MAX-WIDTH: 1024PX) {
+    BODY{
+        display: BLOCK;
+    }
+    .textbox{
+        WIDTH:100%;
+    }
+    .micbox{
+        WIDTH:100%;
+    }
 }

@@ -1,3 +1,4 @@
 let detectSpeech=()=>{
-    alert("I'm here")
+    textContainer.innerHTML="Wetin ypu dey talk";
+    textBOX.STYLE.display = "FLEX";
 }
