@@ -49,7 +49,7 @@ body{
 
 .textbox{
     width: 50% ;
-    display: none;
+    display: flex;
     align-items: CENTER;
     justify-content: center;
 }
@@ -109,12 +109,7 @@ body{
     }
    
     .arrow{
-        background-image: url(clipart17778.png);
-        background-size:10%;
-        width:100%;
-        height:150px;
-        margin-top:20px;
-        background-position:center;
+        display:none;   
     }
     .mimg{
         width:80px;
