@@ -65,6 +65,13 @@ body{
     font-family:arial;
     background-image:url(notepad.png);
     background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.arrow{
+    background-image:url(bluearrowright.png);
+    background-position:center;
+    background-repeat:no-repeat;
     background-size:cover;
 }
 #textContainer{
