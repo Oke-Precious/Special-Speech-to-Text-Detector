@@ -3,6 +3,7 @@ let detectSpeech=()=>{
     var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
     var recognition = new SpeechRecognition();
     textbox.style.display = "flex";
+    arrow.style.display = "block";
 
     recognition.onstart = function(){
         mic.innerHTML = `<img src="broadcast-8440_256.gif" alt="">`
