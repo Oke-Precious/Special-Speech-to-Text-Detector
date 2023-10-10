@@ -20,8 +20,7 @@ let detectSpeech=()=>{
         mic.style.height = "300px";
         var transcript = event.results[0][0].transcript;
         var confidence = event.results[0][0].confidence;
-        textContainer.innerHTML = transcript;     
-        alert("halleluyah")                      
+        textContainer.innerHTML = transcript;                           
     }
     recognition.start()
 
