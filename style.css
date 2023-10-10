@@ -54,7 +54,11 @@ body{
 }
 #textContainer{
     height: 80vh;
+    padding:20px;
+    font-size: 14pt;
     width: 60%;
+    color:black;
+    font-family:arial;
     background-color: rgba(219, 218, 218, 0.829);
 }
 @media screen AND (MAX-WIDTH: 1024PX) {
